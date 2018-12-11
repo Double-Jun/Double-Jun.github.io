@@ -3,17 +3,23 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo</title>
+  <title>nginx配置文件报错 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Chen Mingjun&apos;s github blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="记录一次Nginx配置文件报错问题。今天因为新加测试环境，在Nginx添加一个端口，修改配置文件后，重新启动Nginx发现一直报配置文件错误。错误如下：12[root@linux01 sbin]# ./nginx -s reloadnginx: [emerg] unknown directive &quot;﻿#user&quot; in /usr/local/nginx//conf/nginx.conf:1
+总是提">
+<meta property="og:type" content="article">
+<meta property="og:title" content="nginx配置文件报错">
+<meta property="og:url" content="http://yoursite.com/2018/12/11/nginx配置文件报错/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Chen Mingjun&apos;s github blog">
+<meta property="og:description" content="记录一次Nginx配置文件报错问题。今天因为新加测试环境，在Nginx添加一个端口，修改配置文件后，重新启动Nginx发现一直报配置文件错误。错误如下：12[root@linux01 sbin]# ./nginx -s reloadnginx: [emerg] unknown directive &quot;﻿#user&quot; in /usr/local/nginx//conf/nginx.conf:1
+总是提">
+<meta property="og:image" content="http://yoursite.com/2018/12/11/nginx配置文件报错/20181211151532.png">
+<meta property="og:updated_time" content="2018-12-11T07:47:02.764Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="Chen Mingjun&apos;s github blog">
+<meta name="twitter:title" content="nginx配置文件报错">
+<meta name="twitter:description" content="记录一次Nginx配置文件报错问题。今天因为新加测试环境，在Nginx添加一个端口，修改配置文件后，重新启动Nginx发现一直报配置文件错误。错误如下：12[root@linux01 sbin]# ./nginx -s reloadnginx: [emerg] unknown directive &quot;﻿#user&quot; in /usr/local/nginx//conf/nginx.conf:1
+总是提">
+<meta name="twitter:image" content="http://yoursite.com/2018/12/11/nginx配置文件报错/20181211151532.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -62,9 +68,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-nginx配置文件报错" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-nginx配置文件报错" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/12/11/nginx配置文件报错/" class="article-date">
   <time datetime="2018-12-11T07:05:00.000Z" itemprop="datePublished">2018-12-11</time>
@@ -77,8 +81,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/12/11/nginx配置文件报错/">nginx配置文件报错</a>
+    <h1 class="article-title" itemprop="name">
+      nginx配置文件报错
     </h1>
   
 
@@ -105,98 +109,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/12/11/hello-world/" class="article-date">
-  <time datetime="2018-12-11T07:02:23.374Z" itemprop="datePublished">2018-12-11</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/12/11/hello-world/">Hello Hexo</a>
-    </h1>
+    <a href="/2018/12/11/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ancien</strong>
+      <div class="article-nav-title">Hello Hexo</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="新建一篇文章"><a href="#新建一篇文章" class="headerlink" title="新建一篇文章"></a>新建一篇文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="运行服务"><a href="#运行服务" class="headerlink" title="运行服务"></a>运行服务</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo server </div><div class="line">$ hexo s</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div><div class="line">$ hexo g</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="部署到远程站点（上传GitHub）"><a href="#部署到远程站点（上传GitHub）" class="headerlink" title="部署到远程站点（上传GitHub）"></a>部署到远程站点（上传GitHub）</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div><div class="line">$ hexo d</div></pre></td></tr></table></figure>
-<p>可以使用：hexo d -g ，生成静态文件后然后发布部署。</p>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/12/11/hello-world/" data-id="cjpjffqlv0001vcta5ert3vqb" class="article-share-link">Partager</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-重新开始写博客之旅" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/12/11/重新开始写博客之旅/" class="article-date">
-  <time datetime="2018-12-11T05:56:01.000Z" itemprop="datePublished">2018-12-11</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/12/11/重新开始写博客之旅/">重新开始写博客之旅</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>从2017年3月份创建hexo博客到现在，中间已经过去快2年时间，回顾过去总是感叹时光飞逝。<br>在此重新拾起写博客计划，将自己生活，工作的点滴记录下来。</p>
-<p>每个人都有个写作梦，作为一个程序员，认为能将自己的沉淀通过文字呈现出来，是一件非常美妙且有成就感的事情。</p>
-<p>自己之前看过很多大牛写的博客，非常敬佩及羡慕。也希望自己从此刻开始，慢慢培养写博客的习惯，不好高骛远，就简单朴实地<br>将自己觉得有意义的事记录下来。</p>
-<p>希望此博客记录自己成长的脚印，当某一天自己回过头再看这些博客时，想起当时的自己，能会心一笑。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/12/11/重新开始写博客之旅/" data-id="cjpjffqm10003vctaqazkyr7z" class="article-share-link">Partager</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         
